@@ -1,0 +1,2 @@
+#!/bin/bash
+cd .. Changes the working directory to the user’s home
