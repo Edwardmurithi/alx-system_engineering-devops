@@ -20,4 +20,6 @@ chmod 007 hello >> script that sets the permission to the file hello as follows
 		>> Group: no permission at all
 		>> Other users: all the permissions
 
+chmod 753 >>  script that sets the mode of the file hello to -rwxr-x-wx
+
 
