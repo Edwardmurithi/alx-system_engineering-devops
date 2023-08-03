@@ -22,4 +22,6 @@ chmod 007 hello >> script that sets the permission to the file hello as follows
 
 chmod 753 >>  script that sets the mode of the file hello to -rwxr-x-wx
 
+chmod --reference=olleh hello >>  script that sets the mode of the file hello the same as olleh’s mode.
+
 
