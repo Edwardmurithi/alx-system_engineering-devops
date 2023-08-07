@@ -89,5 +89,5 @@ tail -n +2 | cut -f -1 | sort -k 1 | uniq -c | sort -rnk 1 | head -n 11 | rev | 
 - You are not allowed to use grep, egrep, fgrep or rgrep
 
 
-
+tr -d "cC" >> Create a script that removes all letters c and C from input.
 
