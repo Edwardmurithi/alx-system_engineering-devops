@@ -5,7 +5,7 @@ counter=1
 
 while [ $counter -le 10 ]; do
 	if [ $counter == 9 ]; then
-       		echo "Hi"
+       		echo -e "Best School\nHi"
  	else
 		echo "Best School"
 	fi
