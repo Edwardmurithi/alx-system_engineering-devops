@@ -1,12 +1,8 @@
 #!/usr/bin/env bash
-# The script displays the content of the file /etc/passwd
+# Display usernames, user IDs, and home directories from /etc/passwd using cut.
 
-while read passwd_line; do
-    # Extract username, user ID (UID), and home directory path using cut
-    username=$(echo "$passwd_line" | cut -d ':' -f1)
-    uid=$(echo "$passwd_line" | cut -d ':' -f3)
-    home=$(echo "$passwd_line" | cut -d ':' -f6)
-    
+# Read each line from /etc/passwd using a while loop
+while IFS=: read -r username _ uid _ _ home _; do
     # Print user information
-    echo "User: $username, ID: $uid, Home: $home"
+    echo "$username:$uid:$home"
 done < "/etc/passwd"
