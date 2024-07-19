@@ -1,0 +1,45 @@
+## Behind the Scenes: From [invalid URL removed] to Your Screen
+
+Ever typed "[https://www.google.com](https://www.google.com)" and instantly landed on the search engine's homepage? It might seem like magic, but there's a fascinating chain of events that unfolds in milliseconds. Let's delve into the journey behind that simple action!
+
+**The Address Book: DNS Lookup**
+
+Think of the internet like a giant city. Websites are buildings, and domain names like "google.com" are their addresses. But computers communicate using numerical addresses called IP addresses. This is where the **Domain Name System (DNS)** comes in. It acts like a phonebook, translating the human-readable domain name into the corresponding IP address that your computer can understand.
+
+**The Handshake: TCP/IP Connection**
+
+Once you have the IP address, it's time to establish a connection with Google's server. This is where the **Transmission Control Protocol (TCP)** and **Internet Protocol (IP)** duo take center stage. TCP is responsible for the reliable transfer of data, ensuring everything arrives in the correct order. IP, on the other hand, addresses the data packets, making sure they reach the right destination (the Google server in this case).
+
+**The Gatekeeper: Firewall**
+
+Imagine a security guard at the entrance of a building. That's the role of a **firewall**. It monitors incoming and outgoing traffic, ensuring only authorized data gets through. This helps protect your computer from malicious software and unauthorized access.
+
+**The Secure Tunnel: HTTPS/SSL**
+
+When you see "https" at the beginning of the URL, it means the communication is encrypted using **Hypertext Transfer Protocol Secure (HTTPS)** and **Secure Sockets Layer (SSL)**. This creates a secure tunnel between your browser and the server, scrambling the data being exchanged. This is crucial for protecting sensitive information like passwords or credit card details.
+
+**Traffic Director: Load Balancer**
+
+Large websites like Google often have multiple servers handling requests. A **load balancer** acts like a traffic director, distributing incoming requests evenly across these servers. This ensures smooth performance and prevents any single server from getting overloaded.
+
+**The Host: Web Server**
+
+The **web server** is the actual building that houses the website's files. It receives your request for "[https://www.google.com](https://www.google.com)" and retrieves the necessary files, like HTML code, images, and stylesheets.
+
+**Behind the Scenes: Application Server (Optional)**
+
+For dynamic websites like Google, there might be an additional layer – the **application server**. This server handles more complex tasks like processing search queries, interacting with databases, and generating personalized content.
+
+**The Database: Information Hub**
+
+Websites often rely on databases to store information. When you search for something on Google, the application server might query the database to retrieve relevant search results and personalize your experience.
+
+**Rendering the Page: Bringing it All Together**
+
+Once the web server retrieves all the necessary files, it assembles them into a complete webpage. This data travels back through the secure tunnel, is decrypted by your browser, and finally displayed on your screen as the familiar Google homepage.
+
+**The Final Act: Caching for Speed**
+
+Your browser might also cache frequently accessed files like website logos. This means on subsequent visits, the browser can load these files from its local storage instead of fetching them from the server again, making the website load faster.
+
+So, the next time you type "[https://www.google.com](https://www.google.com)" and hit Enter, remember the invisible orchestra working behind the scenes to bring that information to your screen – a testament to the intricate infrastructure of the web!
